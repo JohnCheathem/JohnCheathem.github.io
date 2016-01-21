@@ -1,6 +1,6 @@
 html{
 
-	background-color: black;
+	background-color: #111;
 	margin: -10;
 }
 
@@ -20,11 +20,14 @@ body{
 .header{
 
 	height: 70px;
-	background-color: #444;
 	margin: 0;
 	width: 100%;
 	padding: 0;
 	text-align: center;
+	
+	padding-top: 0px;
+	background-color: #111;
+	
 	 
 }
 
@@ -56,6 +59,8 @@ body{
 	display: inline-block;
 	line-height: 70px;
 	color: #BBB;
+	text-transform: uppercase;
+	font-size: 12;
 
 }
 
@@ -78,7 +83,7 @@ body{
 	padding: 10;
 	width: 200px;	
 	border-style: solid;
-	border-color: #AAA;
+	border-color: #555;
 	border-width: 1px;
 	top: 0px;	
 	vertical-align: top;
@@ -89,17 +94,12 @@ body{
 	overflow: hidden;
 	
 	margin: 10px;
-	margin-bottom: 40px
+	margin-bottom: 40px;
+		
+	background-color: #222;
+	
 
-	
-}
 
-.contentBlock_1:hover{
-
-	max-height: 10000px;
-	
-	
-	
 }
 
 
@@ -111,11 +111,20 @@ body{
 
 .contentBlock_1 img {
 
+	box-sizing: border-box;
 	width: 100%;
 	height: 300px;
-	border: none;
-	outline: none;
 	text-decoration: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #AAA;
+	opacity: 0.7;
+	
+}
+
+.contentBlock_1:hover img {
+
+	opacity: 0.8;
 }
 
 .contentBlock_1 h1 {
@@ -123,6 +132,8 @@ body{
 	font-size: 16px;
 	letter-spacing: 2px;
 	text-transform:uppercase;
+	
+	line-height: 22px;
 
 }
 
@@ -131,6 +142,63 @@ body{
 	font-size: 18;
 	color: #AAA;
 
+}
+
+.contentBlock_1 a {
+
+	display: inline-block;
+	color: orange;
+	opacity: 0.8;
+	
+	
+}
+
+.contentBlock_1 a:hover {
+
+	
+	
+}
+
+.contentBlock_1 .button{
+
+	width: 100%;
+	line-height: 30px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #222;
+
+	
+	
+}
+
+.contentBlock_1:hover .button{
+
+
+	
+}
+
+.contentBlock_1 .button:hover{
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #444;
+}
+
+.contentBlock_1 a:hover {
+
+	cursor: pointer;
+	
+}
+
+.contentBlock_1:hover div {
+
+	
+}
+
+.contentBlock_1 div {
+
+	padding-top: 10px
+	
 }
 
 .first{
